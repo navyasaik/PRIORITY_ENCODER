@@ -22,12 +22,19 @@ STEP:11 On the board, by giving required input, the LEDs starts to glow light, i
 ![image](https://github.com/RESMIRNAIR/PRIORITY_ENCODER/assets/154305926/3da43bab-6ee6-456f-858f-4553d3623f8c)
 # Program:
 module encoder(d,a,b,c);
+
 input [7:0]d;
+
 output a,b,c;
+
 or(a,d[4],d[5],d[6],d[7]);
+
 or(b,d[2],d[3],d[6],d[7]);
+
 or(c,d[1],d[3],d[5],d[7]);
+
 endmodule
+
 # Output:
 ![image](https://github.com/navyasaik/PRIORITY_ENCODER/assets/165140258/fd4c0f07-3563-4210-a13d-d65bde00121e)
 # Result:
